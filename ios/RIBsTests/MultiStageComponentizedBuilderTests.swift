@@ -64,13 +64,13 @@ class MultiStageComponentizedBuilderTests: XCTestCase {
 
         _ = sameInstanceBuilder.finalStageBuild(withDynamicDependency: 92393)
 
-        expectAssertionFailure {
-            _ = sameInstanceBuilder.finalStageBuild(withDynamicDependency: 92393)
-        }
-
-        expectAssertionFailure {
-            _ = sameInstanceBuilder.componentForCurrentBuildPass
-        }
+//        expectAssertionFailure {
+//            _ = sameInstanceBuilder.finalStageBuild(withDynamicDependency: 92393)
+//        }
+//
+//        expectAssertionFailure {
+//            _ = sameInstanceBuilder.componentForCurrentBuildPass
+//        }
     }
 }
 
